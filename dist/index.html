@@ -10,20 +10,146 @@
   </head>
   <body></body>
   <header class="header">
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item"> <a class="menu__link" href="#">Доставка и оплата</a></li>
-        <li class="menu__item"> <a class="menu__link" href="#">Меню</a></li>
-        <li class="menu__item"> <a class="menu__link" href="#">Акции</a></li>
-        <li class="menu__item"> <a class="menu__link" href="#">Контакты</a></li>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"> <a class="nav__link" href="#">Доставка и оплата</a></li>
+        <li class="nav__item"> <a class="nav__link" href="#">Меню</a></li>
+        <li class="nav__item"> <a class="nav__link" href="#">Акции</a></li>
+        <li class="nav__item"> <a class="nav__link" href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
   <section class="f-screen">
     <div class="f-screen__wrapper">
-      <div class="f-screen__logo"><img src="images/logo.png" alt="logo"></div>
+      <div class="f-screen__logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
       <h2 class="f-screen__title">ОТКРЫВАЕМСЯ</h2>
       <div class="f-screen__date">17 ФЕВРАЛЯ</div><a class="f-screen__btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+    </div>
+  </section>
+  <section class="cook">
+    <div class="wrapper j-between">
+      <div class="cook__descr">
+        <h3 class="cook__title title">Какие блюда мы готовим?</h3>
+        <p class="cook__text">Вкусные и полезные блюда японской кухни. Наши опытные повара одинаково вкусно готовят и легкие японские закуски и питательные горячие блюда.        </p>
+      </div>
+      <div class="cook__img">      </div>
+    </div>
+  </section>
+  <section class="description">
+    <div class="container">
+      <div class="wrapper j-between">
+        <div class="description__box">
+          <div class="description__img"><img src="images/bean1.png" alt="beans"></div>
+          <div class="description__title title">Новые предпочтения</div>
+          <div class="description__text"> Изысканные рецепты, Только самые свежие и сертифицированные, экологически чистые продукты! </div>
+        </div>
+        <div class="description__box">
+          <div class="description__img"><img src="images/bean2.png" alt="beans"></div>
+          <div class="description__title title">Новые блюда</div>
+          <div class="description__text"> Все блюда готовятся в точном соответствии технологическим картам, без замен ингредиентов, полновесные порции и щедрые граммовки.</div>
+        </div>
+        <div class="description__box">
+          <div class="description__img"><img src="images/bean3.png" alt="beans"></div>
+          <div class="description__title title">Новый ресторан</div>
+          <div class="description__text"> Профессиональное оборудование, сертифицированное пищевое производство и высококвалифицированные повара.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menu"> 
+    <div class="container"> 
+      <div class="menu__wrap">
+        <div class="menu__item">
+          <h3 class="menu__title title">Мы превносим традиции</h3>
+          <h4 class="menu__subtitle">НА ВАШИ ТАРЕЛКИ</h4>
+        </div>
+        <div class="menu__inner">
+            <div class="meal">
+              <div class="meal__wrap">
+                <div class="meal__img">
+                    <picture> 
+                      <source srcset="images/californ.webp" type="image/webp"><img class="californ" src="images/californ.jpg" alt="Калифорния ролл">
+                    </picture>
+                </div>
+                <div class="meal__item">
+                  <h4 class="meal__title title">Горячая калифорния</h4>
+                  <p class="meal__text">соус васаби, авокадо, сыр филадельфия, икра тобико, морской гребешок, рис, водоросли нори</p>
+                  <p class="meal__cost">370p.</p>
+                </div>
+              </div>
+            </div>
+            <div class="meal">
+              <div class="meal__wrap">
+                <div class="meal__img">
+                    <picture> 
+                      <source srcset="images/wok.webp" type="image/webp"><img class="wok" src="images/wok.jpg" alt="Wok">
+                    </picture>
+                </div>
+                <div class="meal__item">
+                  <h4 class="meal__title title">Wok морской</h4>
+                  <p class="meal__text">лапша удон, лосось, креветка тигровая, перец болгарский, огурец, лук репчатый, чеснок, сливочный соус </p>
+                  <p class="meal__cost">449p.</p>
+                </div>
+              </div>
+            </div>
+            <div class="meal">
+              <div class="meal__wrap">
+                <div class="meal__item">
+                  <h4 class="meal__title title">Том ям с креветками</h4>
+                  <p class="meal__text">креветка тигровая, шампиньоны, бульон том ям, томаты черри, кинза, сливки </p>
+                  <p class="meal__cost">359p.</p>
+                </div>
+                <div class="meal__img">
+                    <picture> 
+                      <source srcset="images/bowl.webp" type="image/webp"><img class="bowl" src="images/bowl.jpg" alt="Суп">
+                    </picture>
+                </div>
+              </div>
+            </div>
+            <div class="meal">
+              <div class="meal__wrap">
+                <div class="meal__item">
+                  <h4 class="meal__title title">Лосось</h4>
+                  <p class="meal__text">Нежно-розовое мясо 50г</p>
+                  <p class="meal__cost">190p.</p>
+                </div>
+                <div class="meal__img">
+                    <picture> 
+                      <source srcset="images/salmon.webp" type="image/webp"><img class="salmon" src="images/salmon.jpg" alt="Лосось">
+                    </picture>
+                </div>
+              </div>
+            </div>
+            <div class="meal">
+              <div class="meal__wrap">
+                <div class="meal__img">
+                    <picture> 
+                      <source srcset="images/avacado.webp" type="image/webp"><img class="avacado" src="images/avacado.jpg" alt="Авакадо ролл">
+                    </picture>
+                </div>
+                <div class="meal__item">
+                  <h4 class="meal__title title">Аляска</h4>
+                  <p class="meal__text">Сливочный сыр, авокадо, снежный краб, икра тобико красная.</p>
+                  <p class="meal__cost">230p.</p>
+                </div>
+              </div>
+            </div>
+            <div class="meal">
+              <div class="meal__wrap">
+                <div class="meal__img">
+                    <picture> 
+                      <source srcset="images/king.webp" type="image/webp"><img class="king" src="images/king.jpg" alt="Королевский ролл">
+                    </picture>
+                </div>
+                <div class="meal__item">
+                  <h4 class="meal__title title">Королевская Филадельфия</h4>
+                  <p class="meal__text">нежный сливочный сыр; огурчик; угорь; тигровая креветка, обжаренная в темпурном кляре; икра тобико.</p>
+                  <p class="meal__cost">400p.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
   </section>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

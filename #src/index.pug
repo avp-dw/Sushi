@@ -7,13 +7,53 @@ html(lang="en")
    section.f-screen
       .f-screen__wrapper
          .f-screen__logo
-            img(src="images/logo.png", alt="logo")
+            a(href="#")
+               img(src="images/logo.png", alt="logo")
          h2.f-screen__title ОТКРЫВАЕМСЯ
          .f-screen__date 17 ФЕВРАЛЯ
          a.f-screen__btn(href="#") УЗНАТЬ БОЛЬШЕ
-            
 
+   section.cook
+      .wrapper.j-between
+         .cook__descr
+            h3.cook__title.title Какие блюда мы готовим?
+            p.cook__text Вкусные и полезные блюда японской кухни. Наши опытные повара одинаково вкусно готовят и легкие японские закуски и питательные горячие блюда.        
+         .cook__img       
 
+   section.description
+      .container
+         .wrapper.j-between
+            .description__box
+               .description__img
+                  img(src="images/bean1.png", alt="beans")
+               .description__title.title Новые предпочтения
+               .description__text  Изысканные рецепты, Только самые свежие и сертифицированные, экологически чистые продукты! 
+
+            .description__box
+               .description__img
+                  img(src="images/bean2.png", alt="beans")
+               .description__title.title Новые блюда
+               .description__text  Все блюда готовятся в точном соответствии технологическим картам, без замен ингредиентов, полновесные порции и щедрые граммовки.
+
+            .description__box
+               .description__img
+                  img(src="images/bean3.png", alt="beans")
+               .description__title.title Новый ресторан
+               .description__text  Профессиональное оборудование, сертифицированное пищевое производство и высококвалифицированные повара.
+
+   section.menu 
+      .container  
+         .menu__wrap
+            .menu__item
+               h3.menu__title.title Мы превносим традиции
+               h4.menu__subtitle НА ВАШИ ТАРЕЛКИ
+            .menu__inner
+               +meal1('californ','jpg','Калифорния ролл','Горячая калифорния','соус васаби, авокадо, сыр филадельфия, икра тобико, морской гребешок, рис, водоросли нори','370p.')
+               +meal1('wok','jpg','Wok','Wok морской','лапша удон, лосось, креветка тигровая, перец болгарский, огурец, лук репчатый, чеснок, сливочный соус ','449p.')
+               +meal2('bowl','jpg','Суп','Том ям с креветками','креветка тигровая, шампиньоны, бульон том ям, томаты черри, кинза, сливки ','359p.')
+               +meal2('salmon','jpg','Лосось','Лосось','Нежно-розовое мясо 50г','190p.')
+               +meal1('avacado','jpg','Авакадо ролл','Аляска','Сливочный сыр, авокадо, снежный краб, икра тобико красная.','230p.')
+               +meal1('king','jpg','Королевский ролл','Королевская Филадельфия','нежный сливочный сыр; огурчик; угорь; тигровая креветка, обжаренная в темпурном кляре; икра тобико.','400p.')
 
 
 

@@ -1,13 +1,8 @@
 
-nav {
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
-    height: 100px;
-}
-.menu {   
-    position: relative;
-    z-index: 2;
+.nav {   
+    position: absolute;
+    top: 30px;
+    right: 100px;
     &__list {
         display: flex;
     }    
@@ -29,13 +24,12 @@ nav {
             transform: scale(1);
         }
     }
-
-    &__item + .menu__item {
+    &__item + .nav__item {
         margin-left: 38px;
     }
     &__link {
         color: var(--title-color);
-        font-size: 35.1px;
+        font-size: 32px;
         line-height: 1.2;
         opacity: 0.78;
         transition: all .3s;
