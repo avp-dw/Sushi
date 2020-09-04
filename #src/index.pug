@@ -41,19 +41,73 @@ html(lang="en")
                .description__title.title Новый ресторан
                .description__text  Профессиональное оборудование, сертифицированное пищевое производство и высококвалифицированные повара.
 
-   section.menu 
+   section.tradition 
       .container  
-         .menu__wrap
-            .menu__item
-               h3.menu__title.title Мы превносим традиции
-               h4.menu__subtitle НА ВАШИ ТАРЕЛКИ
-            .menu__inner
-               +meal1('californ','jpg','Калифорния ролл','Горячая калифорния','соус васаби, авокадо, сыр филадельфия, икра тобико, морской гребешок, рис, водоросли нори','370p.')
-               +meal1('wok','jpg','Wok','Wok морской','лапша удон, лосось, креветка тигровая, перец болгарский, огурец, лук репчатый, чеснок, сливочный соус ','449p.')
-               +meal2('bowl','jpg','Суп','Том ям с креветками','креветка тигровая, шампиньоны, бульон том ям, томаты черри, кинза, сливки ','359p.')
-               +meal2('salmon','jpg','Лосось','Лосось','Нежно-розовое мясо 50г','190p.')
-               +meal1('avacado','jpg','Авакадо ролл','Аляска','Сливочный сыр, авокадо, снежный краб, икра тобико красная.','230p.')
-               +meal1('king','jpg','Королевский ролл','Королевская Филадельфия','нежный сливочный сыр; огурчик; угорь; тигровая креветка, обжаренная в темпурном кляре; икра тобико.','400p.')
+         .tradition__wrap
+            .menu__tradition
+               h3.tradition__title.title Мы превносим традиции
+               h4.tradition__subtitle НА ВАШИ ТАРЕЛКИ
+            .tradition__inner
+               +meal('californ','jpg','Калифорния ролл','Горячая калифорния','соус васаби, авокадо, сыр филадельфия, икра тобико, морской гребешок, рис, водоросли нори','370p.')
+               +meal('wok','jpg','Wok','Wok морской','лапша удон, лосось, креветка тигровая, перец болгарский, огурец, лук репчатый, чеснок, сливочный соус ','449p.')
+               +meal-reverse('bowl','jpg','Суп','Том ям с креветками','креветка тигровая, шампиньоны, бульон том ям, томаты черри, кинза, сливки ','359p.')
+               +meal-reverse('salmon','jpg','Лосось','Лосось','Нежно-розовое мясо 50г','190p.')
+               +meal('avacado','jpg','Авакадо ролл','Аляска','Сливочный сыр, авокадо, снежный краб, икра тобико красная.','230p.')
+               +meal('king','jpg','Королевский ролл','Королевская Филадельфия','нежный сливочный сыр; огурчик; угорь; тигровая креветка, обжаренная в темпурном кляре; икра тобико.','400p.')
+
+   section.simple-thing
+      h3.simple-thing__title.title Всё гениальное просто, и всё простое гениально.
+      p.simple-thing__text  Широкий ассортимент японской кухни. У нас самое богатое меню роллов и суши, большие порции и бесплатная доставка.
+      +webp('bean3','png','beans')
+
+   section.menu
+      .menu-parallax
+      .menu__inner
+         .container
+            h3.menu__title.title Раскрой для себя
+            h4.menu__subtitle НАШЕ НОВОЕ МЕНЮ   
+               .menu-items    
+                  .menu-item
+                     .menu-item__img
+                        +webp('sushi-menu','png','суши')
+                     .menu-item__descriprion
+                        h4.menu-item__title.title Нигири с нашей лучшей рыбой
+                        p.menu-item__text Классические суши, построенные на идеальном сочетании риса и рыбы. 
+
+                  .menu-item
+                     .menu-item__img
+                        +webp('nigiri-menu','png','суши')
+                     .menu-item__descriprion
+                        h4.menu-item__title.title Большое разнообразие суши
+                        p.menu-item__text Рис и начинка, завернутые в морские водоросли. 
+
+                  .menu-item
+                     .menu-item__img
+                        +webp('uramaki-menu','png','суши')
+                     .menu-item__descriprion
+                        h4.menu-item__title.title Урамаки с лучшими ингридиентами
+                        p.menu-item__text Много начинки и соуса 
+
+                  .menu-item
+                     .menu-item__img
+                        +webp('ramen-menu','png','суши')
+                     .menu-item__descriprion
+                        h4.menu-item__title.title Рамен часть нашей кухни
+                        p.menu-item__text Королевский ролл,Королевская Филадельфия,нежный сливочный сыр 
+
+                  .menu-item
+                     .menu-item__img
+                        +webp('sashimi-menu','png','суши')
+                     .menu-item__descriprion
+                        h4.menu-item__title.title Сашими для любителей рыбы
+                        p.menu-item__text Чистый вкус рыбы и моллюсков без каких-либо гарниров и добавок
+
+                  .menu-item
+                     .menu-item__img
+                        +webp('rice-menu','png','суши')
+                     .menu-item__descriprion
+                        h4.menu-item__title.title Суши рис сделанный по традиции
+                        p.menu-item__text Специальным рис для суши, мелким, с круглыми краями. 
 
 
 

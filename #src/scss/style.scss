@@ -47,11 +47,9 @@
         } 
     }
 }
-
 //   f-screen end
 
 //  cook start
-
 .cook {
     background-color: var(--bg-color);
     height: 490px;
@@ -66,7 +64,7 @@
     }
 }
 .cook__descr {
-    margin: 30px auto 0;
+    margin: 0 auto;
     text-align: center;
     max-width: 530px;
 }
@@ -76,12 +74,9 @@
     background: url(../images/sushi.png) center/cover no-repeat;
     z-index: 99;
 }
-
 //  cook end
 
-
 //  description start
-
 .description {
     background-color: var(--bg-second-color);
     padding: 60px 0;
@@ -103,13 +98,10 @@
         height: 100px;
     }
 }
-
 //   description end
 
-
-//   menu start
-
-.menu {
+//   tradition start
+.tradition {
     padding: 50px 0;
     background-color: var(--bg-color);
     &__title {
@@ -124,12 +116,12 @@
         font-family: 'Montserrat-Light', sans-serif;  
     }
 }
-.menu__wrap {
+.tradition__wrap {
     background-color: var(--bg-second-color);
     padding-top: 55px;
     text-align: center;;
 }
-.menu__inner {
+.tradition__inner {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -171,10 +163,120 @@
         letter-spacing: 1.5px;
     }
 }
+//   tradition end
+
+//  simple-thing start
+.simple-thing {
+    text-align: center;
+    padding: 100px 0;
+    background-color: var(--bg-second-color);
+    color: var(--text-color);
+    &__title {
+        margin-bottom: 15px;
+        font-size: 40px;
+        color: var(--title-color);
+    }
+    &__text {
+        font-size: 20px;
+        max-width: 600px;
+        margin: 0 auto 40px;
+    }
+}
+//  simple-thing end
+
+//   menu start
+.menu {
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;        
+        height: 100%;
+        z-index: 1;
+        opacity: 0.3;
+    }
+    &::before {
+        width: 600px;
+        top: -500px;
+        right: 0;
+        background-image: url('../images/vector_1.png');
+    }
+    &::after {
+        width: 1600px;
+        left: -180px;
+        top: -112px;
+        background-image: url('../images/vector_2.png');
+        background-repeat: no-repeat;
+    }
+    &-parallax {
+        background-image: url('../images/menu-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 1730px;
+    }
+    &__inner {
+        background-color: var(--bg-second-color);    
+        position: absolute;
+        top: 240px;
+        left: 0;
+        right: 0;
+        padding: 40px 0;
+        text-align: center;   
+    }
+    &__title {
+        color: var(--title-color);
+        font-size: 60px;
+    }
+    &__subtitle {
+        color: var(--text-color);
+        font-size: 35px;       
+    }
+}
+
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    line-height: 20px;
+    max-width: 480px;
+    margin-bottom: 50px;
+    z-index: 99;
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px; 
+        background-color: #fff;
+        border-radius: 50%;       
+    }
+    &__descriprion {
+        max-width: 400px;
+        padding-left: 10px;
+    }
+    &__title {
+        color: var(--title-color);
+        font-size: 25px;
+        line-height: 25px;
+    }
+    &__text {
+        display: inline;
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--text-color);
+    }
+}
 
 //   menu end
-
-
 
 
 @import 'grid-media';

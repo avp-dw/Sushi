@@ -25,7 +25,7 @@ mixin webpMedia(name,format,alt,media)
 
 
 
-mixin meal1(name,format,alt,title,text,cost)
+mixin meal(name,format,alt,title,text,cost)
 	.meal
 		.meal__wrap
 			.meal__img
@@ -34,7 +34,7 @@ mixin meal1(name,format,alt,title,text,cost)
 				h4.meal__title.title= title 
 				p.meal__text= text 
 				p.meal__cost= cost 
-mixin meal2(name,format,alt,title,text,cost)
+mixin meal-reverse(name,format,alt,title,text,cost)
 	.meal
 		.meal__wrap
 			.meal__item
@@ -43,3 +43,12 @@ mixin meal2(name,format,alt,title,text,cost)
 				p.meal__cost= cost 
 			.meal__img
 				+webp(name,format,alt)
+
+mixin menu(name,format,alt,title,text,cost)
+	.menu-item
+		.menu-item__img
+			+webp(name,format,alt)
+		.menu__inner
+			h4.menu-item__title.title= title
+			p.menu-item__text= text 
+			span.title= cost
