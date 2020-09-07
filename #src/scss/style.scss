@@ -49,20 +49,22 @@
 }
 //   home end
 
-//  cook start
+
+//  cooking start
 .cooking {
     display: flex;
     align-items: center;
-    // justify-content: center;
     position: relative;
     height: 490px;
     background-color: var(--bg-color);
+
     &__title {
         padding: 0 10px;
         margin-bottom: 40px;
         font-size: 29px;
         color: var(--title-color);
     }
+
     &__text {         
         @include adaptiv-font(18,15);
         padding: 0 10px;
@@ -71,22 +73,26 @@
         max-width: 530px;
     }
 }
+
 .cooking__descr {
     text-align: center;
     z-index: 2;
     margin-left: 18%;
 }
+
 .cooking__img {
     position: absolute;
     height: 100%;
     top: 0;
     right: 0;
 }
+
 .cooking__img img {
     height: 100%;
     object-fit: cover;
 }
-//  cook end
+//  cooking end
+
 
 //  description start
 .description {
@@ -109,24 +115,29 @@
     &::after {
         right: 0;
     }
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     &__box {
         max-width: 310px;
         width: 100%;  
         margin: 0 10px 25px 10px;  
     }
+
     &__img {
         margin-bottom: 16px;
     }
+
     &__title {
         font-size: 25px;
         margin-bottom: 16px;
         color: var(--text-color);
     }
+
     &__text {
         font-size: 16px;
         color: var(--text-color);
@@ -135,14 +146,17 @@
 }
 //   description end
 
+
 //   tradition start
 .tradition {
     padding: 50px 0;
     background-color: var(--bg-color);
+
     &__title {
         @include adaptiv-font(45,40);
         color: var(--title-color);
     }
+
     &__subtitle {
         margin-bottom: 55px;
         @include adaptiv-font(40,34);
@@ -154,12 +168,14 @@
 .tradition__wrap {
     background-color: var(--bg-second-color);
     padding-top: 55px;
-    text-align: center;;
+    text-align: center;
+
 }
 .tradition__inner {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 .meal {
     display: flex;
@@ -167,32 +183,38 @@
     &__wrap {
         display: flex;
     }
+
     &__img,
     &__item {
         width: 50%;        
     }
+
     &__img img {      
         display: block;  
         object-fit: cover; 
         width: 100%;
         height: 100%;
     }
+
     &__item {       
         padding: 0 10px; 
         display: flex;
         justify-content: center;       
         flex-direction: column;
     }
+
     &__title {     
         @include adaptiv-font(30,24);
         margin-bottom: 15px;
         color: var(--title-color);
     }
+
     &__text {
         margin-bottom: 15px;
         color: var(--text-color);
         @include adaptiv-font(16,14);
     }
+
     &__cost {
         color: #e8e8e8;
         font-family: 'MarckScript-Regular', sans-serif;
@@ -209,18 +231,21 @@
 }
 //   tradition end
 
+
 //  simple-thing start
 .simple-thing {
     text-align: center;
     padding: 100px 0;
     background-color: var(--bg-second-color);
     color: var(--text-color);
+
     &__title {
         margin-bottom: 15px;
         padding: 0 10px;
         @include adaptiv-font(40,35);
         color: var(--title-color);
     }
+
     &__text {
         @include adaptiv-font(20,17);
         max-width: 600px;
@@ -229,6 +254,7 @@
     }
 }
 //  simple-thing end
+
 
 //   menu start
 .menu {  
@@ -243,6 +269,7 @@
         padding: 40px 0;
         text-align: center;  
     }
+
     &__title {
         color: var(--title-color);      
         @include adaptiv-font(60,39);      
@@ -258,8 +285,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px;
-    overflow: hidden;
+    margin-top: 50px;   
 }
 
 .menu-item {
@@ -299,6 +325,7 @@
     }
 }
 //   menu end
+
 
 //  booking start
 .booking {
@@ -470,7 +497,6 @@ form {
 
 
 //  footer start
-
 .footer {
     padding: 30px 0 50px;
     background-color: var(--bg-color);

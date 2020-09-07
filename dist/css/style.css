@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: MarckScript-Regular;
   font-display: swap;
@@ -602,7 +604,6 @@ input:focus {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 50px;
-  overflow: hidden;
 }
 
 .menu-item {
@@ -917,6 +918,10 @@ form .form-line {
   border-radius: 50%;
 }
 
+/* портретная ориентация */
+
+/* горизонтальная ориентация */
+
 @supports (-webkit-appearance:none) {
   .home {
     background: url(../images/bg.png) center/cover no-repeat;
@@ -937,7 +942,6 @@ form .form-line {
     top: 0;
     right: -500px;
     background-color: var(--bg-color);
-    padding-top: 155px;
     text-align: center;
     width: 320px;
     position: fixed;
@@ -1348,7 +1352,8 @@ form .form-line {
   }
 
   .menu {
-    padding-top: 274px;
+    padding-top: 260px;
+    min-height: 1565px;
   }
 
   .menu-items {
@@ -1388,5 +1393,37 @@ form .form-line {
     .home {
       background: url(../images/bg.png) 30%/cover no-repeat;
     }
+}
+}
+
+@media screen and (orientation: portrait) {
+  /* Стили для портретной */
+
+  .nav {
+    padding-top: 155px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (orientation: landscape) {
+  /* стили для горизонтальной */
+
+  .nav {
+    padding-top: 80px;
+  }
+
+  .nav__item {
+    padding: 10px 0;
+  }
+
+  .nav__link {
+    font-size: 30px;
+  }
+
+@supports (-webkit-appearance:none) {
+
 }
 }

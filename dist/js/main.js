@@ -65,3 +65,6 @@ $(function () {
     $('.burger').removeClass('active');
   });
 });
+window.addEventListener("orientationchange", function () {
+  jQuery("#mainmenu").hide(0);
+}, false);
