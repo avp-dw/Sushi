@@ -8,10 +8,8 @@
         width: 320px;
         position: fixed;
         z-index: 98;
-        transition: right .5s;
-        // padding-left: 0%;
+        transition: right .5s;     
         padding-right: 0;
-
     }
     .nav.active {
         right: 0;
