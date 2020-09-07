@@ -163,10 +163,19 @@ input:focus {
   font-family: 'MarckScript-Regular', sans-serif;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
 .nav {
   position: absolute;
   top: 30px;
-  padding-left: 36%;
+  padding-right: 30px;
 }
 
 .nav__list {
@@ -949,7 +958,7 @@ form .form-line {
     -webkit-transition: right .5s;
     -o-transition: right .5s;
     transition: right .5s;
-    padding-left: 0%;
+    padding-right: 0;
   }
 
   .nav.active {
@@ -995,6 +1004,26 @@ form .form-line {
 
   .burger {
     display: block;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 1500px) and (orientation: landscape) {
+  /* стили для горизонтальной */
+
+  .nav {
+    padding-top: 80px;
+  }
+
+  .nav__item {
+    padding: 7px 0;
+  }
+
+  .nav__link {
+    font-size: 30px;
   }
 
 @supports (-webkit-appearance:none) {
@@ -1401,26 +1430,6 @@ form .form-line {
 
   .nav {
     padding-top: 155px;
-  }
-
-@supports (-webkit-appearance:none) {
-
-}
-}
-
-@media screen and (orientation: landscape) {
-  /* стили для горизонтальной */
-
-  .nav {
-    padding-top: 80px;
-  }
-
-  .nav__item {
-    padding: 10px 0;
-  }
-
-  .nav__link {
-    font-size: 30px;
   }
 
 @supports (-webkit-appearance:none) {
