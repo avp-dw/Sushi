@@ -201,14 +201,12 @@
     }
 }
 
-
 .meal:nth-child(3),
 .meal:nth-child(4) {
     .meal__item {
         order: -1;
     }
 }
-
 //   tradition end
 
 //  simple-thing start
@@ -236,7 +234,7 @@
 .menu {  
     min-height: 1600px;
     padding-top: 340px;
-    background: url(../images/menu-bg.png) top / cover no-repeat fixed;
+    background: url(../images/menu-bg.jpg) top / cover no-repeat fixed;
     z-index: -1;
 
     // &::before,
@@ -274,8 +272,7 @@
     }
     &__title {
         color: var(--title-color);      
-        @include adaptiv-font(60,39);
-        // font-size: 39px;
+        @include adaptiv-font(60,39);      
     }
     &__subtitle {
         color: var(--text-color); 
@@ -299,7 +296,7 @@
     line-height: 20px;
     max-width: 480px;
     margin-bottom: 50px;
-    z-index: 99;
+    // z-index: 99;
     &__img {
         display: flex;
         justify-content: center;
@@ -330,7 +327,6 @@
 //   menu end
 
 //  booking start
-
 .booking {
     padding: 40px 0 80px;
     background-color: var(--bg-color);
@@ -393,12 +389,8 @@ form {
 //  booking end
 
 .bg-img {
-    background-image: url(../images/bg_2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    // background-attachment: fixed;
-    height: 860px;
+    background: url(../images/bg_2.jpg) center / cover no-repeat;
+    min-height: 860px;
 }
 
 //  discover start

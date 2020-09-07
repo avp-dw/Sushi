@@ -2,7 +2,10 @@
 .nav {   
     position: absolute;
     top: 30px;
-    right: 100px;
+    // text-align: right;
+    // right: 0;
+    padding-left: 36%;
+    // right: 100px;
 
     &__list {
         display: flex;
@@ -44,3 +47,69 @@
         opacity: 1;
     }
 }
+
+//  hamburger menu start
+
+.burger {
+    position: fixed;
+    width: 56px;
+    height: 50px;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 99;
+    padding: 3px;
+    background-color: var(--bg-color);
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 5px;
+    right: 5px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.burger span::before,
+.burger span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.burger span::before {
+    top: -15px;
+}
+
+.burger span::after {
+    top: 15px;
+}
+
+.burger:focus {
+    outline: none;
+} 
+
+.burger.active {
+    &.burger span {
+        background-color: transparent;
+        
+    }
+    &.burger span::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    
+    &.burger span::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+}
+//  hamburger menu end

@@ -54,4 +54,14 @@ try {
   _iterator.f();
 }
 
-;
+; // burger menu
+
+$(function () {
+  $('.burger').on('click', function () {
+    $('.burger').toggleClass('active'), $('.nav').toggleClass('active');
+  });
+  $('.nav__link').on('click', function () {
+    $('.nav').removeClass('active');
+    $('.burger').removeClass('active');
+  });
+});
