@@ -1,4 +1,6 @@
 
+
+//  header start
 .header {
     display: flex;
     justify-content: flex-end;
@@ -50,9 +52,10 @@
         opacity: 1;
     }
 }
+//  header end
+
 
 //  hamburger menu start
-
 .burger {
     position: fixed;
     width: 56px;
