@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,31 +13,33 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"> <a class="nav__link" href="#">Доставка и оплата</a></li>
-        <li class="nav__item"> <a class="nav__link" href="#">Меню</a></li>
-        <li class="nav__item"> <a class="nav__link" href="#">Акции</a></li>
-        <li class="nav__item"> <a class="nav__link" href="#">Контакты</a></li>
+        <li class="nav__item"> <a class="nav__link" href="#menu">Меню</a></li>
+        <li class="nav__item"> <a class="nav__link" href="#event">Акции</a></li>
+        <li class="nav__item"> <a class="nav__link" href="#contacts">Контакты</a></li>
       </ul>
     </nav>
   </header>
-  <section class="f-screen">
-    <div class="f-screen__wrapper">
-      <div class="f-screen__logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
-      <h2 class="f-screen__title">ОТКРЫВАЕМСЯ</h2>
-      <div class="f-screen__date">17 ФЕВРАЛЯ</div><a class="f-screen__btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+  <section class="home"> 
+    <div class="home__wrapper">
+      <div class="home__logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
+      <h2 class="home__title">ОТКРЫВАЕМСЯ</h2>
+      <div class="home__date">17 ФЕВРАЛЯ</div><a class="home__btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
     </div>
   </section>
-  <section class="cook">
-    <div class="wrapper j-between">
-      <div class="cook__descr">
-        <h3 class="cook__title title">Какие блюда мы готовим?</h3>
-        <p class="cook__text">Вкусные и полезные блюда японской кухни. Наши опытные повара одинаково вкусно готовят и легкие японские закуски и питательные горячие блюда.        </p>
-      </div>
-      <div class="cook__img">      </div>
+  <section class="cooking">
+    <div class="cooking__descr">
+      <h3 class="cooking__title title">Какие блюда мы готовим?</h3>
+      <p class="cooking__text">Вкусные и полезные блюда японской кухни. Наши опытные повара одинаково вкусно готовят и легкие японские закуски и питательные горячие блюда.        </p>
+    </div>
+    <div class="cooking__img">
+        <picture> 
+          <source srcset="images/sushi.webp" type="image/webp"><img class="sushi" src="images/sushi.png" alt="суши">
+        </picture>
     </div>
   </section>
   <section class="description">
     <div class="container">
-      <div class="wrapper j-between">
+      <div class="description__wrapper">
         <div class="description__box">
           <div class="description__img"><img src="images/bean1.png" alt="beans"></div>
           <div class="description__title title">Новые предпочтения</div>
@@ -65,87 +67,75 @@
         </div>
         <div class="tradition__inner">
             <div class="meal">
-              <div class="meal__wrap">
-                <div class="meal__img">
-                    <picture> 
-                      <source srcset="images/californ.webp" type="image/webp"><img class="californ" src="images/californ.jpg" alt="Калифорния ролл">
-                    </picture>
-                </div>
-                <div class="meal__item">
-                  <h4 class="meal__title title">Горячая калифорния</h4>
-                  <p class="meal__text">соус васаби, авокадо, сыр филадельфия, икра тобико, морской гребешок, рис, водоросли нори</p>
-                  <p class="meal__cost">370p.</p>
-                </div>
+              <div class="meal__img">
+                  <picture> 
+                    <source srcset="images/californ.webp" type="image/webp"><img class="californ" src="images/californ.jpg" alt="Калифорния ролл">
+                  </picture>
+              </div>
+              <div class="meal__item">
+                <h4 class="meal__title title">Горячая калифорния</h4>
+                <p class="meal__text">соус васаби, авокадо, сыр филадельфия, икра тобико, морской гребешок, рис, водоросли нори</p>
+                <p class="meal__cost">370p.</p>
               </div>
             </div>
             <div class="meal">
-              <div class="meal__wrap">
-                <div class="meal__img">
-                    <picture> 
-                      <source srcset="images/wok.webp" type="image/webp"><img class="wok" src="images/wok.jpg" alt="Wok">
-                    </picture>
-                </div>
-                <div class="meal__item">
-                  <h4 class="meal__title title">Wok морской</h4>
-                  <p class="meal__text">лапша удон, лосось, креветка тигровая, перец болгарский, огурец, лук репчатый, чеснок, сливочный соус </p>
-                  <p class="meal__cost">449p.</p>
-                </div>
+              <div class="meal__img">
+                  <picture> 
+                    <source srcset="images/wok.webp" type="image/webp"><img class="wok" src="images/wok.jpg" alt="Wok">
+                  </picture>
+              </div>
+              <div class="meal__item">
+                <h4 class="meal__title title">Wok морской</h4>
+                <p class="meal__text">лапша удон, лосось, креветка тигровая, перец болгарский, огурец, лук репчатый, чеснок, сливочный соус </p>
+                <p class="meal__cost">449p.</p>
               </div>
             </div>
             <div class="meal">
-              <div class="meal__wrap">
-                <div class="meal__item">
-                  <h4 class="meal__title title">Том ям с креветками</h4>
-                  <p class="meal__text">креветка тигровая, шампиньоны, бульон том ям, томаты черри, кинза, сливки </p>
-                  <p class="meal__cost">359p.</p>
-                </div>
-                <div class="meal__img">
-                    <picture> 
-                      <source srcset="images/bowl.webp" type="image/webp"><img class="bowl" src="images/bowl.jpg" alt="Суп">
-                    </picture>
-                </div>
+              <div class="meal__img">
+                  <picture> 
+                    <source srcset="images/bowl.webp" type="image/webp"><img class="bowl" src="images/bowl.jpg" alt="Суп">
+                  </picture>
+              </div>
+              <div class="meal__item">
+                <h4 class="meal__title title">Том ям с креветками</h4>
+                <p class="meal__text">креветка тигровая, шампиньоны, бульон том ям, томаты черри, кинза, сливки </p>
+                <p class="meal__cost">359p.</p>
               </div>
             </div>
             <div class="meal">
-              <div class="meal__wrap">
-                <div class="meal__item">
-                  <h4 class="meal__title title">Лосось</h4>
-                  <p class="meal__text">Нежно-розовое мясо 50г</p>
-                  <p class="meal__cost">190p.</p>
-                </div>
-                <div class="meal__img">
-                    <picture> 
-                      <source srcset="images/salmon.webp" type="image/webp"><img class="salmon" src="images/salmon.jpg" alt="Лосось">
-                    </picture>
-                </div>
+              <div class="meal__img">
+                  <picture> 
+                    <source srcset="images/salmon.webp" type="image/webp"><img class="salmon" src="images/salmon.jpg" alt="Лосось">
+                  </picture>
+              </div>
+              <div class="meal__item">
+                <h4 class="meal__title title">Лосось</h4>
+                <p class="meal__text">Нежно-розовое мясо 50г</p>
+                <p class="meal__cost">190p.</p>
               </div>
             </div>
             <div class="meal">
-              <div class="meal__wrap">
-                <div class="meal__img">
-                    <picture> 
-                      <source srcset="images/avacado.webp" type="image/webp"><img class="avacado" src="images/avacado.jpg" alt="Авакадо ролл">
-                    </picture>
-                </div>
-                <div class="meal__item">
-                  <h4 class="meal__title title">Аляска</h4>
-                  <p class="meal__text">Сливочный сыр, авокадо, снежный краб, икра тобико красная.</p>
-                  <p class="meal__cost">230p.</p>
-                </div>
+              <div class="meal__img">
+                  <picture> 
+                    <source srcset="images/avacado.webp" type="image/webp"><img class="avacado" src="images/avacado.jpg" alt="Авакадо ролл">
+                  </picture>
+              </div>
+              <div class="meal__item">
+                <h4 class="meal__title title">Аляска</h4>
+                <p class="meal__text">Сливочный сыр, авокадо, снежный краб, икра тобико красная.</p>
+                <p class="meal__cost">230p.</p>
               </div>
             </div>
             <div class="meal">
-              <div class="meal__wrap">
-                <div class="meal__img">
-                    <picture> 
-                      <source srcset="images/king.webp" type="image/webp"><img class="king" src="images/king.jpg" alt="Королевский ролл">
-                    </picture>
-                </div>
-                <div class="meal__item">
-                  <h4 class="meal__title title">Королевская Филадельфия</h4>
-                  <p class="meal__text">нежный сливочный сыр; огурчик; угорь; тигровая креветка, обжаренная в темпурном кляре; икра тобико.</p>
-                  <p class="meal__cost">400p.</p>
-                </div>
+              <div class="meal__img">
+                  <picture> 
+                    <source srcset="images/king.webp" type="image/webp"><img class="king" src="images/king.jpg" alt="Королевский ролл">
+                  </picture>
+              </div>
+              <div class="meal__item">
+                <h4 class="meal__title title">Королевская Филадельфия</h4>
+                <p class="meal__text">нежный сливочный сыр; огурчик; угорь; тигровая креветка, обжаренная в темпурном кляре; икра тобико.</p>
+                <p class="meal__cost">400p.</p>
               </div>
             </div>
         </div>
@@ -159,8 +149,7 @@
         <source srcset="images/bean3.webp" type="image/webp"><img class="bean3" src="images/bean3.png" alt="beans">
       </picture>
   </section>
-  <section class="menu">
-    <div class="menu-parallax"></div>
+  <section class="menu" id="menu"> 
     <div class="menu__inner">
       <div class="container">
         <h3 class="menu__title title">Раскрой для себя</h3>
@@ -207,7 +196,7 @@
               </div>
               <div class="menu-item__descriprion">
                 <h4 class="menu-item__title title">Рамен часть нашей кухни</h4>
-                <p class="menu-item__text">Королевский ролл,Королевская Филадельфия,нежный сливочный сыр </p>
+                <p class="menu-item__text">Вкусная лапша с кусочками мяса и овощами в горячем бульоне. </p>
               </div>
             </div>
             <div class="menu-item">
@@ -229,7 +218,7 @@
               </div>
               <div class="menu-item__descriprion">
                 <h4 class="menu-item__title title">Суши рис сделанный по традиции</h4>
-                <p class="menu-item__text">Специальным рис для суши, мелким, с круглыми краями. </p>
+                <p class="menu-item__text">Специальным рис для суши, мелкий, с круглыми краями. </p>
               </div>
             </div>
           </div>
@@ -237,6 +226,119 @@
       </div>
     </div>
   </section>
+  <section class="booking">
+    <div class="container">
+      <h2 class="booking__title title">Забронировать столик    </h2>
+      <form action="">
+        <div class="form-line">
+          <div class="form-group">
+            <label>Кол-во человек  </label>
+            <select name="">
+              <option value="2">2 человека</option>
+              <option value="2">3 человека</option>
+              <option value="2">4 человека</option>
+              <option value="2">5 человека</option>
+              <option value="2">6+ человека</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Дата                  </label>
+            <input class="date" type="date">
+          </div>
+          <div class="form-group">  
+            <label>Время </label>
+            <input class="time" type="time">
+          </div>
+        </div>
+        <div class="form-line">
+          <div class="form-group">
+            <label>ФИО  </label>
+            <input type="text" placeholder="Ваше Имя" required>
+          </div>
+          <div class="form-group">
+            <label>E-mail      </label>
+            <input type="email" placeholder="Ваш e-mail" required>
+          </div>
+          <div class="form-group">
+            <label>Тел.       </label>
+            <input type="tel" placeholder="Ваш телефон" required>
+          </div>
+        </div>
+        <button class="booking__btn">Отправить</button>
+      </form>
+    </div>
+  </section>
+  <section class="bg-img"></section>
+  <section class="discover" id="event">
+    <div class="container">
+      <div class="discover__title title">Раскрой</div>
+      <div class="discover__subtitle">для себя наше меню</div>
+      <div class="discover__wrapper">
+        <article class="discover-item">
+          <div class="discover-item__img">
+              <picture> 
+                <source srcset="images/discover_1.webp" type="image/webp"><img class="discover_1" src="images/discover_1.jpg" alt="роллы">
+              </picture>
+          </div>
+          <div class="discover-item__inner">  
+            <div class="discover-item__date">Специальный набор / 20 февраля 2021</div>
+            <h5 class="discover-item__title">Уикенд</h5>
+            <p class="discover-item__text">ролл Лосось Тамаго, ролл Хатамото, запеч. ролл Окунь-гриль, ролл Калифорния с креветкой, ролл Марокко, запеч. ролл Румяный, запеч. ролл Сырный, ролл Фудживара.</p><a class="discover-item__link" href="#">Подробнее</a>
+          </div>
+        </article>
+        <article class="discover-item">
+          <div class="discover-item__img">
+              <picture> 
+                <source srcset="images/discover_2.webp" type="image/webp"><img class="discover_2" src="images/discover_2.jpg" alt="роллы">
+              </picture>
+          </div>
+          <div class="discover-item__inner">  
+            <div class="discover-item__date">Ролл <span>Акция</span> / 23 февраля 2021</div>
+            <h5 class="discover-item__title">Ролл с тигровой креветкой и лососем</h5>
+            <p class="discover-item__text">лосось, креветка тигровая, сливочный сыр, авокадо, масаго.</p><a class="discover-item__link" href="#">Подробнее</a>
+          </div>
+        </article>
+        <article class="discover-item">
+          <div class="discover-item__img">
+              <picture> 
+                <source srcset="images/discover_3.webp" type="image/webp"><img class="discover_3" src="images/discover_3.jpg" alt="роллы">
+              </picture>
+          </div>
+          <div class="discover-item__inner">  
+            <div class="discover-item__date">Цыпленок карри / 27 февраля 2021</div>
+            <h5 class="discover-item__title">Цыпленок в соусе карри</h5>
+            <p class="discover-item__text">Куриное филе обжаренное в темпуре, микс салата, киноа, свежий томат черри и огурец, кинза, соус карри, лайм.</p><a class="discover-item__link" href="#">Подробнее</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"> 
+    <div class="conatiner" id="contacts"> 
+      <div class="footer__img">
+          <picture> 
+            <source srcset="images/footer_img.webp" type="image/webp"><img class="footer_img" src="images/footer_img.png" alt="quote">
+          </picture>
+      </div>
+      <div class="footer__text">В скором времени будут доступны приложения на такие платформы как Google Play и Apple Store </div>
+      <div class="footer__links"><a class="footer__link" href="https://www.facebook.com">
+            <picture> 
+              <source srcset="images/facebook.webp" type="image/webp"><img class="facebook" src="images/facebook.png" alt="facebook">
+            </picture></a><a class="footer__link" href="https://twitter.com">
+            <picture> 
+              <source srcset="images/twitter.webp" type="image/webp"><img class="twitter" src="images/twitter.png" alt="twitter">
+            </picture></a><a class="footer__link" href="https://www.instagram.com">
+            <picture> 
+              <source srcset="images/instagram.webp" type="image/webp"><img class="instagram" src="images/instagram.png" alt="instagram">
+            </picture></a><a class="footer__link" href="https://www.pinterest.com">
+            <picture> 
+              <source srcset="images/pinterest.webp" type="image/webp"><img class="pinterest" src="images/pinterest.png" alt="pinterest">
+            </picture></a><a class="footer__link" href="https://www.google.com/">
+            <picture> 
+              <source srcset="images/google.webp" type="image/webp"><img class="google" src="images/google.png" alt="google">
+            </picture></a></div>
+    </div>
+  </footer>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.min.js"></script>

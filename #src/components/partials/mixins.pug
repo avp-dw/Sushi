@@ -27,22 +27,12 @@ mixin webpMedia(name,format,alt,media)
 
 mixin meal(name,format,alt,title,text,cost)
 	.meal
-		.meal__wrap
-			.meal__img
-				+webp(name,format,alt)
-			.meal__item
-				h4.meal__title.title= title 
-				p.meal__text= text 
-				p.meal__cost= cost 
-mixin meal-reverse(name,format,alt,title,text,cost)
-	.meal
-		.meal__wrap
-			.meal__item
-				h4.meal__title.title= title 
-				p.meal__text= text 
-				p.meal__cost= cost 
-			.meal__img
-				+webp(name,format,alt)
+		.meal__img
+			+webp(name,format,alt)
+		.meal__item
+			h4.meal__title.title= title 
+			p.meal__text= text 
+			p.meal__cost= cost 
 
 mixin menu(name,format,alt,title,text,cost)
 	.menu-item

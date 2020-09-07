@@ -1,24 +1,127 @@
-@media(max-width:1400px){
+@media(max-width:1400px) {
 
 }
 
-@media(max-width:1200px){
+@media(max-width:1200px) {
+    .menu::after {
+        display: none;
+    }
+}
+@media(max-width:1040px) {
+    .description__wrapper {
+        justify-content: center;
+    }
+}
+
+@media(max-width:991px) {
+    .nav {
+        display: none;
+    }
 
 }
 
-@media(max-width:991px){
 
+
+
+@media(max-width:791px) {
+    .form-group {
+        width: 100%;
+    }
+    form label,
+    form select,
+    form input {
+        width: 60%;
+        display: block;
+        margin: 10px auto;
+    }
+    form .form-line {
+        margin: 0;
+    }
+    .home__wrapper {
+        margin: 0 auto;
+    }
+    .cooking {
+        justify-content: center;
+    }
+    .cooking__descr {
+        margin: 0;
+    }
+    .cooking__img {
+        right: -250px;
+    }
+    .meal {
+        width: 100%;
+        height: 265px;
+        border-top: 10px solid var(--bg-color);    
+    } 
+}
+@media(max-width:576px) {
+    form select,
+    form input {
+        width: 100%;
+    }
+    .menu-item__img {
+        margin: 0 auto;
+    }
+}
+@media(max-width:510px) {
+    .menu-item__descriprion {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
-@media(max-width:791px){
-   
+@media(max-width:425px) {
+    .home {
+        background: url(../images/bg.png) 30%/cover no-repeat;
+    } 
+    .simple-thing {
+        padding: 45px 0;
+    } 
+    .cooking {
+        height: 400px;
+    }
+    .cooking__text {
+        font-size: 16px;
+    }
+    .bg-img {
+        height: 255px;
+    }
+    .booking__title {
+        margin-bottom: 10px;
+    }
+    .footer__link {
+        margin: 0 5px;
+    }
+    .booking {
+        padding: 40px 0 60px;
+    }
+    form button {
+        margin-top: 40px;
+    }
+    .menu {
+        padding-top: 230px;
+    }  
+    .menu-items {
+        margin-top: 30px;
+    }
+    .menu-item {
+        margin-bottom: 30px;
+    }
+    .menu-item__img {
+        margin: 0 auto;
+    }
+    .meal__title,
+    .meal__text  {
+        margin-bottom: 7px;
+    }
+    .tradition__wrap  {
+        padding-top: 30px;
+    }
+    .tradition__subtitle {
+        margin-bottom: 30px;
+    }
+    .description {
+        padding: 50px 0 25px;
+    }
 }
-
-@media(max-width:576px){
-
-}
-
-@media(max-width:420px){
-
-}
-

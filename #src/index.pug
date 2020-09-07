@@ -1,28 +1,28 @@
-html(lang="en")
+html(lang="ru")
    include components/head.pug
    body
    include components/header.pug
    include components/partials/mixins
 
-   section.f-screen
-      .f-screen__wrapper
-         .f-screen__logo
+   section.home 
+      .home__wrapper
+         .home__logo
             a(href="#")
                img(src="images/logo.png", alt="logo")
-         h2.f-screen__title ОТКРЫВАЕМСЯ
-         .f-screen__date 17 ФЕВРАЛЯ
-         a.f-screen__btn(href="#") УЗНАТЬ БОЛЬШЕ
+         h2.home__title ОТКРЫВАЕМСЯ
+         .home__date 17 ФЕВРАЛЯ
+         a.home__btn(href="#") УЗНАТЬ БОЛЬШЕ
 
-   section.cook
-      .wrapper.j-between
-         .cook__descr
-            h3.cook__title.title Какие блюда мы готовим?
-            p.cook__text Вкусные и полезные блюда японской кухни. Наши опытные повара одинаково вкусно готовят и легкие японские закуски и питательные горячие блюда.        
-         .cook__img       
+   section.cooking
+      .cooking__descr
+         h3.cooking__title.title Какие блюда мы готовим?
+         p.cooking__text Вкусные и полезные блюда японской кухни. Наши опытные повара одинаково вкусно готовят и легкие японские закуски и питательные горячие блюда.        
+      .cooking__img
+           +webp('sushi','png','суши')       
 
    section.description
       .container
-         .wrapper.j-between
+         .description__wrapper
             .description__box
                .description__img
                   img(src="images/bean1.png", alt="beans")
@@ -50,8 +50,8 @@ html(lang="en")
             .tradition__inner
                +meal('californ','jpg','Калифорния ролл','Горячая калифорния','соус васаби, авокадо, сыр филадельфия, икра тобико, морской гребешок, рис, водоросли нори','370p.')
                +meal('wok','jpg','Wok','Wok морской','лапша удон, лосось, креветка тигровая, перец болгарский, огурец, лук репчатый, чеснок, сливочный соус ','449p.')
-               +meal-reverse('bowl','jpg','Суп','Том ям с креветками','креветка тигровая, шампиньоны, бульон том ям, томаты черри, кинза, сливки ','359p.')
-               +meal-reverse('salmon','jpg','Лосось','Лосось','Нежно-розовое мясо 50г','190p.')
+               +meal('bowl','jpg','Суп','Том ям с креветками','креветка тигровая, шампиньоны, бульон том ям, томаты черри, кинза, сливки ','359p.')
+               +meal('salmon','jpg','Лосось','Лосось','Нежно-розовое мясо 50г','190p.')
                +meal('avacado','jpg','Авакадо ролл','Аляска','Сливочный сыр, авокадо, снежный краб, икра тобико красная.','230p.')
                +meal('king','jpg','Королевский ролл','Королевская Филадельфия','нежный сливочный сыр; огурчик; угорь; тигровая креветка, обжаренная в темпурном кляре; икра тобико.','400p.')
 
@@ -60,8 +60,7 @@ html(lang="en")
       p.simple-thing__text  Широкий ассортимент японской кухни. У нас самое богатое меню роллов и суши, большие порции и бесплатная доставка.
       +webp('bean3','png','beans')
 
-   section.menu
-      .menu-parallax
+   section.menu#menu  
       .menu__inner
          .container
             h3.menu__title.title Раскрой для себя
@@ -93,7 +92,7 @@ html(lang="en")
                         +webp('ramen-menu','png','суши')
                      .menu-item__descriprion
                         h4.menu-item__title.title Рамен часть нашей кухни
-                        p.menu-item__text Королевский ролл,Королевская Филадельфия,нежный сливочный сыр 
+                        p.menu-item__text Вкусная лапша с кусочками мяса и овощами в горячем бульоне. 
 
                   .menu-item
                      .menu-item__img
@@ -107,7 +106,71 @@ html(lang="en")
                         +webp('rice-menu','png','суши')
                      .menu-item__descriprion
                         h4.menu-item__title.title Суши рис сделанный по традиции
-                        p.menu-item__text Специальным рис для суши, мелким, с круглыми краями. 
+                        p.menu-item__text Специальным рис для суши, мелкий, с круглыми краями. 
+
+   section.booking
+      .container
+         h2.booking__title.title Забронировать столик    
+         form(action="")
+            .form-line
+               .form-group
+                  label Кол-во человек  
+                  select(name="")
+                     option(value="2") 2 человека
+                     option(value="2") 3 человека
+                     option(value="2") 4 человека
+                     option(value="2") 5 человека
+                     option(value="2") 6+ человека
+               .form-group
+                  label Дата                  
+                  input.date(type="date")
+               .form-group   
+                  label Время 
+                  input.time(type="time")
+            .form-line
+               .form-group
+                  label ФИО  
+                  input(type="text" placeholder="Ваше Имя" required)
+               .form-group
+                  label E-mail      
+                  input(type="email" placeholder="Ваш e-mail" required)
+               .form-group
+                  label Тел.       
+                  input(type="tel" placeholder="Ваш телефон" required)            
+            button.booking__btn Отправить
+
+   section.bg-img
+
+   section.discover#event
+      .container
+         .discover__title.title Раскрой
+         .discover__subtitle для себя наше меню
+         .discover__wrapper
+            article.discover-item
+               .discover-item__img
+                  +webp('discover_1','jpg','роллы')
+               .discover-item__inner   
+                  .discover-item__date Специальный набор / 20 февраля 2021
+                  h5.discover-item__title Уикенд
+                  p.discover-item__text ролл Лосось Тамаго, ролл Хатамото, запеч. ролл Окунь-гриль, ролл Калифорния с креветкой, ролл Марокко, запеч. ролл Румяный, запеч. ролл Сырный, ролл Фудживара.
+                  a.discover-item__link(href="#") Подробнее
+            article.discover-item
+               .discover-item__img
+                  +webp('discover_2','jpg','роллы')
+               .discover-item__inner   
+                  .discover-item__date Ролл <span>Акция</span> / 23 февраля 2021
+                  h5.discover-item__title Ролл с тигровой креветкой и лососем
+                  p.discover-item__text лосось, креветка тигровая, сливочный сыр, авокадо, масаго.
+                  a.discover-item__link(href="#") Подробнее
+            article.discover-item
+               .discover-item__img
+                  +webp('discover_3','jpg','роллы')
+               .discover-item__inner   
+                  .discover-item__date Цыпленок карри / 27 февраля 2021
+                  h5.discover-item__title Цыпленок в соусе карри
+                  p.discover-item__text Куриное филе обжаренное в темпуре, микс салата, киноа, свежий томат черри и огурец, кинза, соус карри, лайм.
+                  a.discover-item__link(href="#") Подробнее
+
 
 
 
