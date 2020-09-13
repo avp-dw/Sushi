@@ -26,6 +26,7 @@ testWebP(function (support) {
 $(document).ready(function () {
   svg4everybody({});
 }); // for webP
+//  smooth scroll
 
 var anchors = document.querySelectorAll('a[href*="#"]');
 
@@ -47,14 +48,13 @@ try {
 
   for (_iterator.s(); !(_step = _iterator.n()).done;) {
     _loop();
-  }
+  } // burger menu
+
 } catch (err) {
   _iterator.e(err);
 } finally {
   _iterator.f();
 }
-
-; // burger menu
 
 $(function () {
   $('.burger').on('click', function () {
@@ -64,7 +64,12 @@ $(function () {
     $('.nav').removeClass('active');
     $('.burger').removeClass('active');
   });
-});
-window.addEventListener("orientationchange", function () {
-  jQuery("#mainmenu").hide(0);
-}, false);
+}); // modal window
+
+var demo = document.querySelectorAll('.demo');
+
+for (var i = 0; i < demo.length; i++) {
+  demo[i].addEventListener('click', function () {
+    console.log(alert('ЭТО ДЕМО ВЕРСИЯ САЙТА'));
+  });
+}

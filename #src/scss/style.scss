@@ -19,20 +19,20 @@
         margin-bottom: 80px; 
         z-index: 99;
     }
-    &__title {
-        @include adaptiv-font(56,30);
+    &__title { 
+        font-size: 56px;
         margin-bottom: 22px;
         color: var(--title-color);
     }
-    &__date {
-        @include adaptiv-font(60,40);    
+    &__date {  
+        font-size: 60px;
         text-align: left;
         margin-bottom: 100px;
         color: var(--title-color);
         font-family: 'Montserrat-Bold', sans-serif;
     }
-    &__btn {
-        @include adaptiv-font(40,24);
+    &__btn {   
+        font-size: 40px;
         color: var(--title-color);   
         display: inline-block;
         padding: 30px 27px;
@@ -420,13 +420,16 @@ form {
 }
 
 .discover-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 339px;
-    width: 100%;
+    width: 100%;   
     background-color: #fff;
     margin: 0 10px 20px 10px;
 
     &__inner {
-        padding: 20px;
+        padding: 10px;
     }
 
     &__img {
@@ -435,12 +438,14 @@ form {
 
     &__img img {
         display: block;
+        object-fit: cover;
         width: 100%;
+        max-width: 100%;
         height: auto; 
         transition: all .4s ease-out;
         
         &:hover {
-            transform: scale(1.2);         
+            transform: scale(1.2);               
         }
     }
 
@@ -465,18 +470,17 @@ form {
     &__text {
         font-size: 15px;
         color: var(text-dark-color);
-        margin-bottom: 5px;
-        min-height: 100px;
+        margin-bottom: 5px;   
     }
 
-    &__link {
-        display: inline-block;
+    &__link {      
         position: relative;
         font-family: 'Montserrat-Bold', sans-serif;
         font-size: 14px;
-        color: #555;
-        padding-bottom: 10px;
-        transition: all .3s;
+        color: #555;    
+        padding-bottom: 15px;
+        transition: all .3s;     
+        margin: auto auto 10px 10px;  
         &::before {
             content: "";
             position: absolute;
@@ -488,7 +492,7 @@ form {
             background-color: var(--title-color);
             transition: all .3s;
         } 
-        &:hover::before {
+        &:hover::before {        
             width: 100%;
         }
     }

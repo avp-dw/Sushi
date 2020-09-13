@@ -22,23 +22,21 @@ $(document).ready(function () {
 
 // for webP
 
-
-const anchors = document.querySelectorAll('a[href*="#"]')
+//  smooth scroll
+const anchors = document.querySelectorAll('a[href*="#"]');
 for (let anchor of anchors) {
   anchor.addEventListener("click", function(event) {
     event.preventDefault();
-    const blockID = anchor.getAttribute('href')
+    const blockID = anchor.getAttribute('href');
     document.querySelector('' + blockID).scrollIntoView({
       behavior: "smooth",
       block: "start"
-    })
-  })
-};
-
+    });
+  });
+}
 
 
 // burger menu
-
 $(function(){
    $('.burger').on('click', function(){
       $('.burger').toggleClass('active'),
@@ -52,7 +50,11 @@ $(function(){
 });
 
 
+// modal window
+const demo = document.querySelectorAll('.demo');
+for (let i = 0; i < demo.length ; i++) {
+   demo[i].addEventListener('click', () => {
+      console.log(alert('ЭТО ДЕМО ВЕРСИЯ САЙТА'));
+   });
+}  
 
-window.addEventListener("orientationchange", function() {
-   jQuery("#mainmenu").hide(0);
-}, false);

@@ -45,15 +45,13 @@
 }
 
 /* портретная ориентация */
-@media screen and (orientation:portrait) {
-    /* Стили для портретной */
+@media screen and (orientation:portrait) {   
     .nav {
         padding-top: 155px;
     }
 }
 /* горизонтальная ориентация */
-@media screen and (max-width:1500px) and (orientation:landscape) {
-    /* стили для горизонтальной */
+@media screen and (max-width:1500px) and (orientation:landscape) {   
     .nav {
         padding-top: 80px;
     }
@@ -89,6 +87,7 @@
     .home__wrapper {
         margin: 0 auto;
     }
+    
     .cooking {
         justify-content: center;
     }
@@ -103,6 +102,15 @@
         height: 265px;
         border-top: 10px solid var(--bg-color);    
     } 
+    .home__title {      
+        @include adaptiv-font(56,30);
+    }
+    .home__date { 
+        @include adaptiv-font(60,40);    
+    }
+    .home__btn {
+        @include adaptiv-font(40,24);
+    }
 }
 
 @media(max-width:576px) {
@@ -124,7 +132,7 @@
 
 @media(max-width:425px) {
     .home {
-        background: url(../images/bg.png) 30%/cover no-repeat;
+        background: url(../images/bg.png) 30% / cover no-repeat;
     } 
     .simple-thing {
         padding: 45px 0;

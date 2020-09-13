@@ -321,13 +321,13 @@ input:focus {
 }
 
 .home__title {
-  font-size: calc(30px + 26 * ((100vw - 320px) / 1120));
+  font-size: 56px;
   margin-bottom: 22px;
   color: var(--title-color);
 }
 
 .home__date {
-  font-size: calc(40px + 20 * ((100vw - 320px) / 1120));
+  font-size: 60px;
   text-align: left;
   margin-bottom: 100px;
   color: var(--title-color);
@@ -335,7 +335,7 @@ input:focus {
 }
 
 .home__btn {
-  font-size: calc(24px + 16 * ((100vw - 320px) / 1120));
+  font-size: 40px;
   color: var(--title-color);
   display: inline-block;
   padding: 30px 27px;
@@ -806,6 +806,16 @@ form .form-line {
 }
 
 .discover-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   max-width: 339px;
   width: 100%;
   background-color: #fff;
@@ -813,7 +823,7 @@ form .form-line {
 }
 
 .discover-item__inner {
-  padding: 20px;
+  padding: 10px;
 }
 
 .discover-item__img {
@@ -822,7 +832,10 @@ form .form-line {
 
 .discover-item__img img {
   display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
   width: 100%;
+  max-width: 100%;
   height: auto;
   -webkit-transition: all .4s ease-out;
   -o-transition: all .4s ease-out;
@@ -858,19 +871,18 @@ form .form-line {
   font-size: 15px;
   color: var(text-dark-color);
   margin-bottom: 5px;
-  min-height: 100px;
 }
 
 .discover-item__link {
-  display: inline-block;
   position: relative;
   font-family: 'Montserrat-Bold', sans-serif;
   font-size: 14px;
   color: #555;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
+  margin: auto auto 10px 10px;
 }
 
 .discover-item__link::before {
@@ -1012,8 +1024,6 @@ form .form-line {
 }
 
 @media screen and (max-width: 1500px) and (orientation: landscape) {
-  /* стили для горизонтальной */
-
   .nav {
     padding-top: 80px;
   }
@@ -1270,6 +1280,18 @@ form .form-line {
     border-top: 10px solid var(--bg-color);
   }
 
+  .home__title {
+    font-size: calc(30px + 26 * ((100vw - 320px) / 1120));
+  }
+
+  .home__date {
+    font-size: calc(40px + 20 * ((100vw - 320px) / 1120));
+  }
+
+  .home__btn {
+    font-size: calc(24px + 16 * ((100vw - 320px) / 1120));
+  }
+
 @supports (-webkit-appearance:none) {
 
 }
@@ -1426,8 +1448,6 @@ form .form-line {
 }
 
 @media screen and (orientation: portrait) {
-  /* Стили для портретной */
-
   .nav {
     padding-top: 155px;
   }
